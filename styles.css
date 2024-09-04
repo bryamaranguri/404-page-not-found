@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.scarecrow img {
+  width: 200px; /* Ajusta el tamaño según sea necesario */
+  margin-bottom: 20px;
+}
+
+.message h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.message p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+footer {
+  margin-top: 20px;
+}
+
+footer p {
+  font-size: 14px;
+  color: #777;
+}
+
+footer span {
+  font-weight: bold;
+}
+
+/* Estilos para pantallas móviles */
+@media (max-width: 768px) {
+  .scarecrow img {
+      width: 150px;
+  }
+
+  .message h2 {
+      font-size: 28px;
+  }
+
+  .message p {
+      font-size: 16px;
+  }
+}
