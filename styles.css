@@ -1,61 +1,93 @@
+/* Estilos generales */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Space Mono', monospace;
 }
 
 body {
   background-color: #f8f8f8;
-  color: #333;
+  color: #333333;
+  font-size: 18px;
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  height: 100vh;
-  text-align: center;
+  min-height: 100vh;
   padding: 20px;
 }
 
+header {
+  margin-top: 20px;
+  width: 100%;
+  text-align: left; /* Alinea el header a la izquierda */
+  padding-left: 80px;
+
+}
+
+/* Estilos para el header */
 header h1 {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 20px;
+  color: #333333;
+
 }
 
+/* Estilos para el main */
 main {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.scarecrow {
+  flex: 1;
+  display: flex;
   justify-content: center;
 }
 
 .scarecrow img {
-  width: 200px; /* Ajusta el tamaño según sea necesario */
-  margin-bottom: 20px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.message {
+  flex: 1;
+  max-width: 500px;
+  text-align: left;
+  padding-left: 20px;
 }
 
 .message h2 {
-  font-size: 36px;
+  font-size: 48px;
   font-weight: bold;
   margin-bottom: 20px;
+  color: #333333;
 }
 
+
+/*corregir */
 .message p {
-  font-size: 18px;
-  margin-bottom: 20px;
+  font-size: 24px;
+  margin-bottom: 40px;
+  color: #4F4F4F;
 }
 
 .button {
-  padding: 10px 20px;
+  padding: 15px 30px;
   background-color: #333;
   color: #fff;
   text-decoration: none;
-  font-size: 16px;
-  border-radius: 5px;
+  font-size: 18px;
+  border-radius: 0px;
   transition: background-color 0.3s ease;
 }
 
@@ -63,30 +95,47 @@ main {
   background-color: #555;
 }
 
+/* Estilos para el footer */
 footer {
   margin-top: 20px;
+  text-align: center;
 }
 
 footer p {
   font-size: 14px;
-  color: #777;
+  color: #4F4F4F;
 }
 
 footer span {
   font-weight: bold;
 }
 
-/* Estilos para pantallas móviles */
+/* Estilos responsivos para dispositivos móviles */
 @media (max-width: 768px) {
+  main {
+      flex-direction: column;
+  }
+
   .scarecrow img {
-      width: 150px;
+      max-width: 100%;
+      margin-bottom: 20px;
+  }
+
+  .message {
+      text-align: center;
+      padding-left: 0;
   }
 
   .message h2 {
-      font-size: 28px;
+      font-size: 36px;
   }
 
   .message p {
-      font-size: 16px;
+      font-size: 18px;
   }
+
+  .button {
+    padding: 15px 30px;
+
+}
 }
