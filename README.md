@@ -1,6 +1,6 @@
-# Make It Real - NAME OF THE PROJECT
+# Make It Real - 404-page-not-found
 
-This is a solution to the _______ project of the Make It Real course.
+This is a solution to the first personal project of the Make It Real course.
 
 ## Table of contents
 
