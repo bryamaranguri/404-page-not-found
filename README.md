@@ -79,7 +79,7 @@ Use this section to outline areas that you want to continue focusing on in futur
 ## Author
 
 - Website - [Bryam Aranguri](https://github.com/bryamaranguri)
-- Twitter - [@yourusername](https://x.com/bryamaranguri)
+- Twitter - [@bryamaranguri](https://x.com/bryamaranguri)
 
 ## Acknowledgments
 
